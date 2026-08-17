@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dojo to Dome — Unofficial NJPW Hub</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="/" aria-label="Dojo to Dome — home">
+        DOJO<span class="arrow">→</span>DOME
+      </a>
+      <nav class="primary-nav">
+        <a href="#series">Events</a>
+        <a href="#news">News</a>
+        <a href="#champions">Champions</a>
+        <a href="#community">Podcasts &amp; Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SPOTLIGHT -->
+    <section class="spotlight-section">
+      <a class="spotlight-card" href="https://g1climax36.vercel.app/" target="_blank" rel="noopener">
+        <div class="spotlight-glow" aria-hidden="true"></div>
+        <p class="eyebrow">
+          <span class="live-dot" aria-hidden="true"></span>
+          HAPPENING NOW
+        </p>
+        <h1 class="spotlight-title">G1 CLIMAX 36 <span class="accent-gold">— FINAL</span></h1>
+        <p class="spotlight-meta">Ryōgoku Sumo Hall, Tokyo &middot; Aug 16, 2026</p>
+        <p class="spotlight-desc">Two block winners, one night, one shot at the IWGP World Title. Full card, live ratings, and block standings inside.</p>
+        <span class="spotlight-cta">Enter the Tracker <span class="cta-arrow">→</span></span>
+      </a>
+    </section>
+
+    <div class="content-grid">
+
+      <!-- LATEST NEWS -->
+      <section class="panel" id="news" aria-labelledby="news-heading">
+        <div class="panel-head">
+          <h2 id="news-heading">Latest News</h2>
+          <p class="panel-sub">Curated &amp; credited — never scraped or reproduced</p>
+        </div>
+        <div class="news-list" id="newsList">
+          <a class="news-item news-item--empty" href="#">
+            <span class="news-source">SOURCE NAME</span>
+            <span class="news-headline">Add a curated headline and link out to the original reporting</span>
+            <span class="news-link">Read on source ↗</span>
+          </a>
+          <a class="news-item news-item--empty" href="#">
+            <span class="news-source">SOURCE NAME</span>
+            <span class="news-headline">Add a curated headline and link out to the original reporting</span>
+            <span class="news-link">Read on source ↗</span>
+          </a>
+          <a class="news-item news-item--empty" href="#">
+            <span class="news-source">SOURCE NAME</span>
+            <span class="news-headline">Add a curated headline and link out to the original reporting</span>
+            <span class="news-link">Read on source ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CURRENT CHAMPIONS -->
+      <section class="panel" id="champions" aria-labelledby="champions-heading">
+        <div class="panel-head">
+          <h2 id="champions-heading">Current Champions</h2>
+          <p class="panel-sub">Title &middot; champion &middot; days held</p>
+        </div>
+        <ul class="champ-list" id="champList">
+          <!-- populated by script.js -->
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- EVENT SERIES -->
+    <section class="series-section" id="series" aria-labelledby="series-heading">
+      <div class="section-head">
+        <h2 id="series-heading">Event Series</h2>
+        <p class="panel-sub">Every major NJPW tour, tracked start to finish</p>
+      </div>
+      <div class="series-grid">
+
+        <a class="series-tile series-tile--live" href="https://g1climax36.vercel.app/" target="_blank" rel="noopener">
+          <span class="series-status">LIVE</span>
+          <h3>G1 Climax</h3>
+          <p class="series-meta">Jul – Aug &middot; Block tournament</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>Wrestle Kingdom</h3>
+          <p class="series-meta">January &middot; Tokyo Dome</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>New Beginning</h3>
+          <p class="series-meta">February</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>New Japan Cup</h3>
+          <p class="series-meta">March &middot; Single elim.</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>Sakura Genesis</h3>
+          <p class="series-meta">April</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>Dominion</h3>
+          <p class="series-meta">June &middot; Osaka-jo Hall</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>Destruction</h3>
+          <p class="series-meta">September</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+        <a class="series-tile" href="#">
+          <h3>World Tag League</h3>
+          <p class="series-meta">November – December</p>
+          <div class="series-stat"><span>AVG RATING</span><strong>—</strong></div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- PODCASTS & COMMUNITY -->
+    <section class="community-section" id="community" aria-labelledby="community-heading">
+      <div class="section-head">
+        <h2 id="community-heading">Podcasts &amp; Community</h2>
+        <p class="panel-sub">NJPW-focused shows and stats sites worth your time</p>
+      </div>
+      <div class="community-grid">
+
+        <a class="community-card" href="#">
+          <span class="community-type community-type--podcast">PODCAST</span>
+          <h3>Super J-Cast</h3>
+          <p>Weekly NJPW news &amp; results talk.</p>
+        </a>
+
+        <a class="community-card" href="#">
+          <span class="community-type community-type--podcast">PODCAST</span>
+          <h3>Keeping It Strong Style</h3>
+          <p>Deep dives on cards and storylines.</p>
+        </a>
+
+        <a class="community-card" href="#">
+          <span class="community-type community-type--podcast">PODCAST</span>
+          <h3>Post Puroresu</h3>
+          <p>Puroresu coverage beyond just NJPW.</p>
+        </a>
+
+        <a class="community-card" href="#">
+          <span class="community-type community-type--stats">STATS &amp; COMMUNITY</span>
+          <h3>Sport of Pro Wrestling</h3>
+          <p>Match ratings &amp; historical data.</p>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-brand">DOJO<span class="arrow">→</span>DOME</p>
+    <p>Built for learning &amp; personal use. Results sourced from public wrestling reporting. Not affiliated with New Japan Pro Wrestling.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
